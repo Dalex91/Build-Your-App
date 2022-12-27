@@ -1,4 +1,4 @@
-package com.example.build_your_app.activities.splash
+package com.example.build_your_app.core.splash
 
 import SplashScreenViewModel
 import android.content.Intent
@@ -7,7 +7,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.build_your_app.activities.main.MainActivity
+import com.example.build_your_app.core.main.MainActivity
 import com.example.build_your_app.databinding.ActivitySplashBinding
 
 
