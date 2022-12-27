@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic__959961001582545568.xml" value="0.1575" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/layout/activity_main.xml" value="0.14945652173913043" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_home_screen.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
