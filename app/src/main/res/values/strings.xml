@@ -2,4 +2,8 @@
     <string name="app_name">Build-Your-App</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="splash_title">CREATE YOUR \n OWN APP</string>
+    <string name="laboratory_work">Laboratory work</string>
+    <string name="weight_guesser">Weight guesser</string>
+    <string name="battery_measurement">Battery meter</string>
+    <string name="light_detector">Light detector</string>
 </resources>
