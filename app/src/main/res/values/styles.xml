@@ -8,4 +8,9 @@
         <item name="boxStrokeColor">@color/green_android</item>
         <item name="boxStrokeWidth">2dp</item>
     </style>
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
 </resources>

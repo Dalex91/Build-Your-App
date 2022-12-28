@@ -1,4 +1,4 @@
-package com.example.build_your_app.core.Utils
+package com.example.build_your_app.core.utils
 
 import android.app.Activity
 import android.content.Context
