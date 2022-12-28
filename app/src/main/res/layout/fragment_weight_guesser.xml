@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.build_your_app.core.fragments.height_guess.WeightGuesserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shark">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_26dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/ic_back_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon_weight_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_26dp"
+            android:minWidth="150dp"
+            android:minHeight="150dp"
+            android:src="@drawable/ic_weight_guesser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_button" />
+
+        <TextView
+            android:id="@+id/input_weight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_26dp"
+            android:gravity="center"
+            android:fontFamily="@font/sf_pro_rounded_bold"
+            android:text="@string/input_your_weight"
+            android:textColor="@color/green_android"
+            android:textSize="@dimen/text_size26sp"
+            app:layout_constraintEnd_toEndOf="@id/icon_weight_iv"
+            app:layout_constraintStart_toStartOf="@id/icon_weight_iv"
+            app:layout_constraintTop_toBottomOf="@id/icon_weight_iv" />
+
+        <EditText
+            android:id="@+id/weight_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_android"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/green_android"
+            android:textColorHint="@color/silver_tree"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/input_weight_tv"
+            app:layout_constraintStart_toStartOf="@id/input_weight_tv"
+            app:layout_constraintTop_toBottomOf="@id/input_weight_tv" />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_android"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="@string/submit"
+            android:textColor="@color/shark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/weight_bar"
+            app:layout_constraintStart_toStartOf="@id/weight_bar"
+            app:layout_constraintTop_toBottomOf="@id/weight_bar"
+            app:strokeColor="@color/green_android" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_26dp"
+            android:backgroundTint="@color/green_android"
+            app:layout_constraintEnd_toEndOf="@id/submit_button"
+            app:layout_constraintStart_toStartOf="@id/submit_button"
+            app:layout_constraintTop_toBottomOf="@id/submit_button"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
