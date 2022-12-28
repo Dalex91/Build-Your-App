@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.example.build_your_app.R
 import com.example.build_your_app.databinding.FragmentHomeScreenBinding
 
 class HomeScreenFragment : Fragment() {
@@ -22,7 +24,14 @@ class HomeScreenFragment : Fragment() {
         binding.apply {
             lifecycleOwner = this@HomeScreenFragment
             viewModel = viewModelHomeScreen
+            weightGuesserCv.setOnClickListener {
+                goToWeightGuesser()
+            }
         }
         return binding.root
+    }
+
+    private fun goToWeightGuesser() {
+        findNavController().navigate(R.id.action_home_screen_fragment_to_weight_guesser_fragment)
     }
 }

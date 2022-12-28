@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Build-Your-App/app/src/main/res/drawable/color_cursor.xml" value="0.2195" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic__959961001582545568.xml" value="0.1575" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_back_icon.xml" value="0.176" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_battery.xml" value="0.1575" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_laboratory.xml" value="0.1575" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_light.xml" value="0.1575" />
@@ -12,6 +14,7 @@
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/button_card_view.xml" value="0.253125" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_home_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_weight_guesser.xml" value="0.264" />
       </map>
     </option>
   </component>
