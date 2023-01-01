@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.build_your_app.core.Utils.hideKeyboard
+import com.example.build_your_app.core.utils.hideKeyboard
 import com.example.build_your_app.core.dialogs.FoundWeightDialog
 import com.example.build_your_app.databinding.FragmentWeightGuesserBinding
 

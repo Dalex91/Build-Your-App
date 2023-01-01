@@ -27,11 +27,18 @@ class HomeScreenFragment : Fragment() {
             weightGuesserCv.setOnClickListener {
                 goToWeightGuesser()
             }
+            batteryCv.setOnClickListener {
+                goToBatteryMeter()
+            }
         }
         return binding.root
     }
 
     private fun goToWeightGuesser() {
         findNavController().navigate(R.id.action_home_screen_fragment_to_weight_guesser_fragment)
+    }
+
+    private fun goToBatteryMeter() {
+        findNavController().navigate(R.id.action_home_screen_fragment_to_battery_meter_fragment)
     }
 }

@@ -11,4 +11,5 @@
     <string name="valid_number">Please input a valid number</string>
     <string name="ok">Ok</string>
     <string name="your_weight">Wow! Your weight is %s kilograms!</string>
+    <string name="battery_level">%d %%</string>
 </resources>
