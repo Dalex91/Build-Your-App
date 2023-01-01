@@ -1,5 +1,7 @@
 package com.example.build_your_app.core.fragments.battery_meter
 
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -15,7 +17,6 @@ class BatteryMeterFragment : Fragment() {
 
     private val viewModel: BatteryMeterViewModel by viewModels()
     private lateinit var binding: FragmentBatteryMeterBinding
-    private var battery = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,12 +29,14 @@ class BatteryMeterFragment : Fragment() {
                 findNavController().popBackStack()
             }
         }
-
+        displayBatteryLevel()
         return binding.root
     }
 
-    private fun updateProgressBar() {
-        binding.progressBar.progress = battery
-        binding.textViewProgress.text = getString(R.string.battery_level, battery)
+    private fun displayBatteryLevel() {
+        val batteryIntent = requireActivity().registerReceiver(null,
+            IntentFilter(Intent.ACTION_BATTERY_CHANGED))
+        viewModel.displayProgressiveBattery(binding.progressBar, binding.textViewProgress,
+            viewModel.getBatteryLevel(batteryIntent).toInt())
     }
 }
