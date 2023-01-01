@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_home_screen_fragment_to_battery_meter_fragment"
             app:destination="@id/battery_meter_fragment" />
+        <action
+            android:id="@+id/action_home_screen_fragment_to_light_detector_fragment"
+            app:destination="@id/light_detector_fragment" />
     </fragment>
 
     <fragment
@@ -26,4 +29,9 @@
         android:id="@+id/battery_meter_fragment"
         android:name="com.example.build_your_app.core.fragments.battery_meter.BatteryMeterFragment"
         tools:layout="@layout/fragment_battery_meter"/>
+
+    <fragment
+        android:id="@+id/light_detector_fragment"
+        android:name="com.example.build_your_app.core.fragments.light_detector.LightDetectorFragment"
+        tools:layout="@layout/fragment_light_detector"/>
 </navigation>

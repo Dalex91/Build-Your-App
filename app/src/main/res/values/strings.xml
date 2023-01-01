@@ -12,4 +12,6 @@
     <string name="ok">Ok</string>
     <string name="your_weight">Wow! Your weight is %s kilograms!</string>
     <string name="battery_level">%d %%</string>
+    <string name="dark_outside">It\'s dark outside</string>
+    <string name="bright_outside">It\'s bright outside</string>
 </resources>
