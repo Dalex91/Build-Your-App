@@ -10,12 +10,15 @@
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_battery.xml" value="0.1575" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_laboratory.xml" value="0.1575" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_light.xml" value="0.1575" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_moon_regular.xml" value="0.1435" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_sun_regular.xml" value="0.1435" />
         <entry key="..\:/Build-Your-App/app/src/main/res/drawable/ic_weight_guesser.xml" value="0.1575" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/activity_main.xml" value="0.14945652173913043" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/button_card_view.xml" value="0.253125" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_battery_meter.xml" value="0.25416666666666665" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_home_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_light_detector.xml" value="0.23854166666666668" />
         <entry key="..\:/Build-Your-App/app/src/main/res/layout/fragment_weight_guesser.xml" value="0.264" />
       </map>
     </option>

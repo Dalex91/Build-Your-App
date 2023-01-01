@@ -30,6 +30,9 @@ class HomeScreenFragment : Fragment() {
             batteryCv.setOnClickListener {
                 goToBatteryMeter()
             }
+            lightCheckerCv.setOnClickListener {
+                goToLightDetector()
+            }
         }
         return binding.root
     }
@@ -40,5 +43,9 @@ class HomeScreenFragment : Fragment() {
 
     private fun goToBatteryMeter() {
         findNavController().navigate(R.id.action_home_screen_fragment_to_battery_meter_fragment)
+    }
+
+    private fun goToLightDetector() {
+        findNavController().navigate(R.id.action_home_screen_fragment_to_light_detector_fragment)
     }
 }
