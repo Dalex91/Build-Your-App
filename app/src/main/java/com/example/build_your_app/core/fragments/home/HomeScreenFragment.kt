@@ -24,6 +24,9 @@ class HomeScreenFragment : Fragment() {
         binding.apply {
             lifecycleOwner = this@HomeScreenFragment
             viewModel = viewModelHomeScreen
+            laboratoryCv.setOnClickListener {
+                goToLaboratoryWork()
+            }
             weightGuesserCv.setOnClickListener {
                 goToWeightGuesser()
             }
@@ -47,5 +50,9 @@ class HomeScreenFragment : Fragment() {
 
     private fun goToLightDetector() {
         findNavController().navigate(R.id.action_home_screen_fragment_to_light_detector_fragment)
+    }
+
+    private fun goToLaboratoryWork() {
+        findNavController().navigate(R.id.action_home_screen_fragment_to_laboratory_work_fragment)
     }
 }

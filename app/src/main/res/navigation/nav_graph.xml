@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_home_screen_fragment_to_light_detector_fragment"
             app:destination="@id/light_detector_fragment" />
+        <action
+            android:id="@+id/action_home_screen_fragment_to_laboratory_work_fragment"
+            app:destination="@id/laboratory_work_fragment" />
     </fragment>
 
     <fragment
@@ -34,4 +37,9 @@
         android:id="@+id/light_detector_fragment"
         android:name="com.example.build_your_app.core.fragments.light_detector.LightDetectorFragment"
         tools:layout="@layout/fragment_light_detector"/>
+
+    <fragment
+        android:id="@+id/laboratory_work_fragment"
+        android:name="com.example.build_your_app.core.fragments.laboratory_work.LaboratoryWorkFragment"
+        tools:layout="@layout/fragment_laboratory_work"/>
 </navigation>
